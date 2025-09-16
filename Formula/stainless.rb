@@ -25,13 +25,7 @@ class Stainless < Formula
   end
 
   test do
-    assert_match "[  Info  ] Stainless verification tool (https://github.com/epfl-lara/stainless)
-[  Info  ]   Version: 0.9.9.1
-[  Info  ]   Built at: 2025-09-05 18:25:54.473+0200
-[  Info  ]   Stainless Scala version: 3.7.2
-[  Info  ] Inox solver (https://github.com/epfl-lara/inox)
-[  Info  ] Version: 1.1.5-208-g467725e
-[  Info  ] Bundled Scala compiler: 3.7.2" shell_output("#{bin}/stainless --version")
-    # todo
+    # minimal test to check that everything works
+    assert_match "0.9.9.1" shell_output("#{bin}/stainless --no-colors=true --version")
   end
 end
