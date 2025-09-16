@@ -26,6 +26,6 @@ class Stainless < Formula
 
   test do
     # minimal test to check that everything works
-    assert_match "0.9.9.1" shell_output("#{bin}/stainless --no-colors=true --version")
+    assert_match("0.9.9.1", shell_output("#{bin}/stainless --no-colors=true --version"))
   end
 end
